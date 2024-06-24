@@ -208,6 +208,11 @@ button:hover {
   flex-wrap: wrap;
 }
 
+.title-temp3{
+  font-size: clamp(1.875rem, 3vw, 2.25rem);
+  text-align: center; 
+}
+
 .info{
   font-size: clamp(1.2rem, 2vw, 1.5rem);
       padding: 25px 15px;
@@ -246,6 +251,7 @@ label{
 
 .section{
   padding-top: 100px;
+  margin: 0 25px;
   
 }
 
@@ -359,6 +365,23 @@ label{
   .header-logo {
     background-image: url(img/dark.jpg);
   }
+
+  .personajes-protagonistas img:first-child{
+    content: url(img/invincible.png);
+  }
+
+  .personajes-protagonistas img:nth-of-type(2) {
+    content: url(img/omni-man.png);
+  }
+
+  .imgTemp2{
+    width: 350px;
+    height: 450px;
+    padding: 5px 25px 5px 0px;
+    content: url(img/mark-temp2.jpg);
+  }
+
+
   .button {
     background-color: #fff;
     color: #d30000;
