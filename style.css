@@ -1,0 +1,407 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1db9e9;
+  color: #000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1db9e9;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5px;
+  box-sizing: border-box;
+}
+.header-link:hover {
+  color: #000;
+}
+
+.header-logo {
+  width: 300px;
+  height: 100px;
+  background-image: url("img/inv-logo.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.header-navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  font-size: 18;
+  margin-right: 20px;
+  font-weight: 700;
+}
+
+.header-navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Estilos para el main*/
+.main {
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  place-items: center;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-section {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.main-section__title {
+  font-size: 45px;
+  letter-spacing: -3px;
+  padding-top: 100px;
+}
+
+.main-section__descripcion {
+  text-align: center;
+  font-size: clamp(1rem, 2vw, 1.75rem);
+  padding: 0px 0px 30px 15px;
+}
+
+.title-personajes {
+  text-align: center;
+  font-size: 35px;
+  padding: 0px 0px 0px 15px;
+}
+
+.relevante {
+  color: #fff700;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+}
+.relevante:hover {
+  color: #dd111d;
+}
+
+.personajes-protagonistas {
+  max-width: 100%;
+  font-size: clamp(1.25rem, 2.7vw, 1.375rem);
+  padding: 0px 45px 5px 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.personajes-protagonistas img {
+  max-width: 100%;
+  display: grid;
+  margin: 0 auto;
+  height: 250px;
+  width: 300px;
+  padding: 0px 20px;
+}
+
+.personajes-secundarios {
+  font-weight: bold;
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  padding: 5px 0px 5px 20px;
+  display: grid;
+  grid-template-rows: auto;
+}
+.personajes-secundarios li {
+  list-style-type: none;
+}
+
+.title-trailer {
+  text-align: center;
+  font-size: 50px;
+}
+
+.trailer-video__container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.trailer-video__container video {
+  width: 100%;
+  height: auto;
+  border-radius: 35px;
+}
+
+
+/*Temporada 2*/
+.temp2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.text-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.imgTemp2 {
+  width: 300px;
+  height: 400px;
+  flex-shrink: 0; /* Evita que la imagen se reduzca */
+  padding: 10px 25px;
+}
+
+.title-temp2 {
+  font-size: clamp(1.875rem, 3vw, 2.25rem);
+  text-align: center; 
+}
+
+.descripcion-temp2 {
+  font-size: clamp(1.25rem, 2.7vw, 1.375rem);
+  padding: 0px 0px 5px 0;
+  text-align: center; 
+}
+
+.button  {
+  font-size: 30px;
+  margin: 30px 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #fff700;
+  background-color: #000000;
+  border-radius: 20px;
+  box-shadow: 0px 3px 15px 3px #000000;
+  transition: all 0.1s ease-in-out;
+}
+
+.button:active {
+  color: #fff700;
+  background-color: #1db9e9;
+  box-shadow: none;
+}
+button:hover {
+  color: #dd111d;
+}
+
+.contacto{
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+.title-temp3{
+  font-size: clamp(1.875rem, 3vw, 2.25rem);
+  text-align: center; 
+}
+
+.info{
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+      padding: 25px 15px;
+}
+
+.input {
+  height: 1rem;
+  width: 20rem;
+  background-color: #292929;
+  border: 1px solid #3e3e3e;
+  border-radius: 8px;
+  color: #fff;
+  padding: 14px 24px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 12px 14px;
+  cursor: pointer;
+  
+}
+
+.input:hover {
+  border: 1px solid #fff;
+}
+label{
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+}
+
+.buttonForm{
+  display: flex;
+  justify-content: center;
+}
+
+.send{
+  margin: 20px 0;
+}
+
+.section{
+  padding-top: 100px;
+  margin: 0 25px;
+  
+}
+
+
+.footer {
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 20px;
+  text-align: center;
+  background-color: #1db9e9;
+  color: #000;
+}
+
+/* Media query para ajustar en dispositivos más pequeños */
+@media screen and (max-width: 50em) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    position: static;
+  }
+  .header-logo {
+    width: 200px;
+    height: 65px;
+    background-image: url(img/inv-logo.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .header-navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-navbar ul li {
+    margin: 0px 5px;
+    gap: 10px;
+  }
+  .main {
+    padding: 0px;
+  }
+
+  .main-section{
+    padding: 0 20px;
+  }
+
+  .main-section__title {
+    padding: 0px;
+  }
+
+  .personajes-protagonistas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .personajes-protagonistas img {
+    max-width: 100%;
+    height: 150px;
+    width: 200px;
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  .trailer-video__container video {
+    width: 100%;
+    max-width: 720px;
+  }
+
+  .temp2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 10px;
+  }
+
+  .title-temp2{
+    margin: 0;
+  }
+  
+  .section{
+    padding: 0;
+  }
+
+  .contacto{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+}
+
+/*Media para el dark mode*/
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  .main h1,
+  h2 {
+    color: #d30000;
+  }
+  .header {
+    background-color: #000000;
+  }
+  .header-link {
+    -webkit-text-stroke: 1px white;
+    color: #000000;
+    font-size: 1.1rem;
+  }
+  .header-logo {
+    background-image: url(img/dark.jpg);
+  }
+
+  .personajes-protagonistas img:first-child{
+    content: url(img/invincible.png);
+  }
+
+  .personajes-protagonistas img:nth-of-type(2) {
+    content: url(img/omni-man.png);
+  }
+
+  .imgTemp2{
+    width: 350px;
+    height: 450px;
+    padding: 5px 25px 5px 0px;
+    content: url(img/mark-temp2.jpg);
+  }
+
+
+  .button {
+    background-color: #fff;
+    color: #d30000;
+    box-shadow: 0px 3px 15px 3px #8b8b8b;
+    transition: all 0.1s ease-in;
+  }
+  .button:hover {
+    color: #000000;
+  }
+  .footer {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+
+/*@media(hover :hover ){
+  button:hover{
+     background-color: #000000;
+    color: #dd111d
+     }
+}
+*/
